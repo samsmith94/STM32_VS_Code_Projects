@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\SEGGER\JLink\JLink.exe" -device STM32L476RG -If SWD -speed 4000 -autoconnect 1 -CommandFile C:\\Users\\sunik\\Desktop\\STM32_VS_Code_Projects\\NUCLEO_L476RG_template\\CommandFile.jlink

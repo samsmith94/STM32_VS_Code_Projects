@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Make Firmware",
+            "type": "shell",
+            "command": "&'C:\\Users\\sunik\\AppData\\Roaming\\GNU MCU Eclipse\\Build Tools\\2.12-20190422-1053\\bin\\make'",
+            "args": ["all"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }, 
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Load Firmware",
+            "type": "shell",
+            //"command": "st-flash write ./build/vsarm_firmware.bin 0x08000000",
+            //"command": "&'C:\\Program Files (x86)\\SEGGER\\JLink\\JLinkGDBServerCL.exe'",
+            //"args": ["-select USB -device STM32L476RG -endian little -if SWD -speed 4000 -noir -LocalhostOnly"],
+            
+            //"command": "start ${workspaceRoot}/jlink.bat;exit",
+            "command": "start ${workspaceRoot}/jlink.bat",
+            //"args": ["/MIN"],
+
+            //-select USB -device STM32L476RG -endian little -if SWD -speed 4000 -noir -LocalhostOnly
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

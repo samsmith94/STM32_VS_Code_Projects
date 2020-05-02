@@ -1,0 +1,5 @@
+si
+r
+h
+loadbin C:\Users\sunik\Desktop\STM32_VS_Code_Projects\NUCLEO_L476RG_template\build\vscode_stm32l476_nucleo.bin,0x08000000
+exit
